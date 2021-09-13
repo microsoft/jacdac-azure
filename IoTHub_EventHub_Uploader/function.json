@@ -1,0 +1,14 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "IoTHubMessages",
+      "direction": "in",
+      "eventHubName": "samples-workitems",
+      "connection": "",
+      "cardinality": "many",
+      "consumerGroup": "$Default"
+    }
+  ],
+  "scriptFile": "../dist/IoTHub_EventHub_Uploader/index.js"
+}
